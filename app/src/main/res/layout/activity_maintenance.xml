@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vObj"
+            type="com.example.expandablerecyclerview.module.category.CategoryViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:backgroundTint="#f0f0f0"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/git"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    tools:text="Welcome,Abhishek Pandey"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="LOGOUT"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#ffc7e3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="1">
+
+                    <FrameLayout
+                        android:id="@+id/electrician"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/frame_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:text="ELECTRICIAN"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/carpenter"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/frame_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:text="CARPENTER"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/plumber"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/frame_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:text="PLUMBER"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                </GridLayout>
+
+            </LinearLayout>
+</layout>

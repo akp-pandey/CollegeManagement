@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="notice"
+            type="com.example.expandablerecyclerview.model.Notice" />
+    </data>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_bg"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text='@{String.format("Date:- %s",notice.date)}'
+            android:textStyle="bold"
+            tools:text="Date:- 02/09/2021"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text='@{String.format("Description:- %s",notice.notice)}'
+            android:textColor="@color/black"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            tools:text="Description:- Tomorrow is holdiay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/deleteNotice"
+            android:text="Delete"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:layout_margin="10dp"
+            android:layout_gravity="end"
+            android:backgroundTint="#c00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>

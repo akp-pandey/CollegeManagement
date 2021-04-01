@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="notice"
+            type="com.example.expandablerecyclerview.model.Notice" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:background="@drawable/frame_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date"
+                tools:text="03/06/2021(Monday)"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:text='@{String.format("%s ",notice.date)}'
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/date"
+                android:layout_margin="10dp"
+                android:id="@+id/noticeImage"
+                android:src="@drawable/git"
+                android:scaleType="fitXY"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:padding="10dp"
+                android:text="@{notice.notice}"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:layout_below="@id/noticeImage"
+                android:layout_width="match_parent"
+                tools:text="Tomorrow college will be closed"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:lines="8"
+                android:layout_margin="10dp" />
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>

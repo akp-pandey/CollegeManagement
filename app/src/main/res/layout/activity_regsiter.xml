@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.student.Regsiter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="REGISTER"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.013" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/frame_bg"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/frame_bg"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:hint="Enter your name"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/hostelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/frame_bg"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:hint="Enter hostelName"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="15sp"  />
+
+
+        <EditText
+            android:id="@+id/roomNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/frame_bg"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:hint="Enter room number"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/branchName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/frame_bg"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:hint="Enter branch name"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="140dp"
+            android:background="@drawable/frame_bg"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="15sp"  />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginBottom="248dp"
+            android:background="@drawable/frame_bg"
+            android:fontFamily="@font/fontsfree_net_gilory"
+            android:text="REGISTER"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.156">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:text="Already have an account?  "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:text="Click here"
+                android:textColor="@color/teal_700" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/registerProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+             />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

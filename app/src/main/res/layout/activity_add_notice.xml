@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.notice.NoticeManagement">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/gietImage"
+            android:src="@drawable/git"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <Button
+            android:layout_below="@id/gietImage"
+            android:id="@+id/addNotice"
+            android:layout_margin="20dp"
+            android:text="Add Notice"
+            android:background="@drawable/frame_bg"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_margin="20dp"
+            android:layout_below="@id/addNotice"
+            android:id="@+id/deleteNotice"
+            android:text="Delete Notice"
+            android:background="@drawable/frame_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

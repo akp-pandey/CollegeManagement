@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.expandablerecyclerview">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/git"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ExpandableRecyclerView">
+        <activity android:name=".module.onboarding.Spalsh">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".module.results.ResultActivity" />
+        <activity android:name=".module.admin.plumber.Electrician" />
+        <activity android:name=".module.admin.plumber.NotesAdmin" />
+        <activity android:name=".module.gallery.GalleryActivity" />
+        <activity android:name=".module.admin.plumber.CarpenterManagement" />
+        <activity android:name=".module.maintenance.ElectricianManagement" />
+        <activity android:name=".module.faculty.FacultyManagement" />
+        <activity android:name=".module.admin.plumber.AdminLogin" />
+        <activity
+            android:name=".module.student.Login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".module.student.Regsiter"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".module.attendance.AttendanceActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".module.notice.DeleteNotice"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".module.notice.CreateNotice"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".module.notice.NoticeManagement" />
+        <activity android:name=".module.entrypage.EntryPage" />
+        <activity android:name=".module.admin.plumber.Plumber" />
+        <activity android:name=".module.notice.NoticeActivity" />
+        <activity
+            android:name=".module.maintenance.PlumberAvtivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".module.category.CategoryActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".module.onboarding.MainActivity"
+            android:windowSoftInputMode="adjustResize">
+
+        </activity>
+    </application>
+
+</manifest>

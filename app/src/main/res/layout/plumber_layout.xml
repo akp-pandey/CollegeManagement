@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="complain"
+            type="com.example.expandablerecyclerview.model.Complain" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/frame_bg">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/date"
+                android:text="@{complain.dateTime}"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                tools:text="20/03/2021"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text='@{String.format("Hostel :- %s",complain.hostelName)}'
+                android:layout_below="@id/date"
+                android:id="@+id/hostel"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:text="Hostel :- NC 12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@id/hostel"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:text='@{String.format("Issue :- %s",complain.issue)}'
+                android:textStyle="bold"
+                android:id="@+id/issue"
+                tools:text="Issue :-Tap is not working"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@id/issue"
+                android:id="@+id/time"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:text='@{String.format("Available Time :- %s",complain.availableTime)}'
+                tools:text="Available Time :- 4:00 PM to 6:00 PM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_below="@+id/time"
+                tools:text="Phone :- 7004606855"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:text='@{String.format("Room no. :- %s",complain.activePhone)}'
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/delete"
+                android:text="DELETE"
+                android:layout_below="@+id/phone"
+                android:fontFamily="@font/fontsfree_net_gilory"
+                android:backgroundTint="#c00"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+</layout>
